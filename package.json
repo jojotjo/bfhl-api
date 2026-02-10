@@ -1,7 +1,7 @@
 {
   "name": "bfghl-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "BFHL API for Chitkara Qualifier",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
