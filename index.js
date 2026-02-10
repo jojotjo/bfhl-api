@@ -101,48 +101,6 @@ app.post("/bfhl", async (req, res) => {
     }
 
     // -- Gemini AI --
-    // if ("AI" in body) {
-    //   if (typeof body.AI !== 'string' || body.AI.trim() === '') {
-    //     return res.status(400).json({
-    //       is_success: false,
-    //       error: "AI must be a non-empty string"
-    //     });
-    //   }
-
-    //   const apiKey = process.env.AI_API_KEY;
-
-    //   // Use the working model directly
-    //   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
-
-    //   const response = await axios.post(url, {
-    //     contents: [{
-    //       parts: [{ text: body.AI }]
-    //     }]
-    //   });
-
-    //   let answer = "Unknown";
-
-    //   if (
-    //     response.data &&
-    //     response.data.candidates &&
-    //     response.data.candidates.length > 0 &&
-    //     response.data.candidates[0].content &&
-    //     response.data.candidates[0].content.parts &&
-    //     response.data.candidates[0].content.parts.length > 0
-    //   ) {
-    //     answer = response.data.candidates[0].content.parts[0].text
-    //       .trim()
-    //       .split(/\s+/)[0];
-    //   }
-
-    //   return res.status(200).json({
-    //     is_success: true,
-    //     official_email: EMAIL,
-    //     data: answer,
-    //   });
-    // }
-
-    // -- Gemini AI --
     if ("AI" in body) {
       if (typeof body.AI !== "string" || body.AI.trim() === "") {
         return res.status(400).json({
