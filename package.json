@@ -4,8 +4,7 @@
   "description": "BFHL API for Chitkara Qualifier",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-     "dev": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
